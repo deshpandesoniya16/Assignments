@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery-3.2.1.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        alert("Book my show wants to access the location");
+});
+</script>
+  <style>
+.col-sm-3{
+  float: right;
+}
+.col-sm-7{
+  align-items:stretch;
+}
+#mynavbar{
+  margin-bottom: 0;
+  border-radius: 0;
+}
+#secondNav{
+      background-color: rgba(0,0,0,0.2);
+      position:absolute;
+
+
+      width:100%;
+      z-index:10;
+      padding:0;
+      border: 0;
+
+}
+  li{
+    font-size: 12px;
+  }
+.panel
+{
+  border-radius: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,0.2);}
+}
+.carousel{
+
+      margin-bottom: 10px;
+
+
+ }
+.col-sm-5{
+  float:right;
+display: inline-block;
+}
+.line{
+  width:22px;
+  height: 5px;
+  border-bottom: 4px solid rgb(192, 44, 58);
+  position: absolute;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">EXPERIENCES</a></li>
+        <li class="active"><a href="#">MOVIES</a></li>
+        <li class="active"><a href="#">PLAYS</a></li>
+        <li class="active"><a href="#">EVENTS</a></li>
+        <li class="active"><a href="#">SPORTS</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="ENTER YOUR CITY">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+      </div>
+      </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">OFFERS</a></li>
+      <li><a href="#">GIFT CARDS</a></li>
+      <li><a href="#">CORPORATES</a></li>
+      <li><a href="#">SUPPORT</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-bell"></span></a></li>
+      <li><a href="#">SIGN IN</a></li>
+    </ul>
+
+  </div>
+  </div>
+</nav>
+<!--Panel
+<div class="row">
+  <div class="container-fluid">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-sm-2">
+                      <img src="logo.png" alt="No img" height="50" width="150">
+            </div>
+            <div class="col-sm-8">
+                <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default btn-lg"  style="background-color: rgb(192, 44, 58);color:rgb(255,255,255);" >
+                      <span class="glyphicon glyphicon-th-large"></span>      ALL      <span class="glyphicon glyphicon-menu-down"></span>
+                    </button>
+                  </span>
+                  <div class="has-feedback">
+                   <input type="text" class="form-control input-lg" placeholder="Book tickets for movies,events,sports">
+                   <span class="glyphicon glyphicon-th-list form-control-feedback"></span>
+                 </div>
+                </div>
+            </div>
+          </div>
+            <div class="col-sm-2">
+                      <div class="form-group">
+                          <select class="form-control input-lg">
+                              <option selected>English</option>
+                              <option>Hindi</option>
+                              <option>Kannada</option>
+                              <option>Marathi</option>
+                          </select>
+                      </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+-->
+<!--Navbar 2-->
+
+<nav class="navbar navbar-default" id="secondNav">
+
+  <div class="row">
+  <div class="container-fluid">
+    <div class="navbar-header col-sm-2">
+      <a href="#"><img src="logo.png" alt="No img" height="60" width="150"></a>
+    </div>
+    <ul class="nav navbar-nav col-sm-8">
+      <li><div class="navbar-form form-group">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default btn-lg"  style="background-color: rgb(192, 44, 58);color:rgb(255,255,255);width:150px;" >
+              <span class="glyphicon glyphicon-th-large"></span>      ALL      <span class="glyphicon glyphicon-menu-down"></span>
+            </button>
+          </span>
+          <div class="has-feedback">
+           <input type="text" class="form-control input-lg" placeholder="Book tickets for movies,events,sports" style="width:550px">
+           <span class="glyphicon glyphicon-th-list form-control-feedback"></span>
+         </div>
+        </div>
+    </div></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right col-sm-2">
+      <li>  <div class="navbar-form form-group">
+            <select class="form-control input-lg">
+                <option selected>English</option>
+                <option>Hindi</option>
+                <option>Kannada</option>
+                <option>Marathi</option>
+            </select>
+        </div></li>
+    </ul>
+  </div>
+</div>
+
+</nav>
+
+
+<!--Carousel-->
+
+    <div id="myslide" class="carousel slide" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#myslide" data-slide-to="0"></li>
+      <li data-target="#myslide" data-slide-to="1"></li>
+      <li data-target="#myslide" data-slide-to="2" class="active"></li>
+      <li data-target="#myslide" data-slide-to="3"></li>
+      <li data-target="#myslide" data-slide-to="4"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item">
+        <img src="movie1.jpg" alt="No movie" style="width:100%;height:600px;">
+      </div>
+      <div class="item">
+          <img src="movie2.jpg" alt="No movie" style="width:100%;height:600px;">
+      </div>
+      <div class="item active">
+          <img src="movie3.jpg" alt="No movie" style="width:100%;height:600px;">
+      </div>
+      <div class="item">
+          <img src="movie4.jpg" alt="No movie" style="width:100%;height:600px;">
+      </div>
+      <div class="item">
+          <img src="movie5.jpg" alt="No movie" style="width:100%;height:600px;">
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myslide" data-slide="prev">
+    </a>
+
+    <a class="right carousel-control" href="#myslide" data-slide="next">
+    </a>
+
+
+</div>
+
+
+  <div class="col-sm-3" style="margin-top:15px;">
+
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search Offers" >
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</div>
+<br>
+<br>
+<!-- Browse Movies-->
+  <div class="container text-center">
+    <div class="row">
+      <h3>FEATURED EVENTS</h3>
+        <div class="col-sm-5">
+          <div class="form-inline">
+            <div class="well">
+              <img src="wellimg1.png" alt="no icon" height="50" width="90">
+              Powerful mordern <br> Event registration tool
+              <button type="button" class="btn btn-default" style="background-color: rgb(192, 44, 58);color:rgb(255,255,255);">CREATE EVENT</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-default" style="background-color:rgb(192, 44, 58);color:rgb(255,255,255);"  data-toggle="collapse" data-target="#movies">BROWSE MOVIES</button>
+      <br><br>
+    <div class="collapse" id="movies">
+    <div class="row">
+    <div class="col-sm-3">
+      <img src="gridimg1.jpg" class="img-rounded" height="200px" width="250px" alt="no img">
+    </div>
+    <div class="col-sm-3">
+
+      <img src="gridimg2.jpg" class="img-rounded" height="200px" width="250px" alt="no img">
+    </div>
+    <div class="col-sm-3">
+
+      <img src="gridimg3.jpg" class="img-rounded" height="200px" width="250px" alt="no img">
+    </div>
+    <div class="col-sm-3">
+
+      <img src="gridimg4.jpg" class="img-rounded" height="200px" width="250px" alt="no img">
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+  <div class="col-sm-3">
+
+  <img src="gridimg5.jpg" class="img-rounded" height="200px" width="250px" alt="noimg">
+  </div>
+  <div class="col-sm-3">
+
+  <img src="gridimg6.jpg" class="img-rounded" height="200px" width="250px" alt="noimg">
+  </div>
+  <div class="col-sm-3">
+
+  <img src="gridimg7.jpg" class="img-rounded" height="200px" width="250px" alt="noimg">
+  </div>
+  <div class="col-sm-3">
+
+  <img src="gridimg8.jpg" class="img-rounded" height="200px" width="250px" alt="noimg">
+  </div>
+  </div>
+</div>
+  </div>
+  <br><br>
+  <footer class="container-fluid text-center">Do mail me   :<a href="#">@deshpandesoniya16@gmail.com</a></p>
+  </footer>
+
+
+
+
+</body>
+</html>
